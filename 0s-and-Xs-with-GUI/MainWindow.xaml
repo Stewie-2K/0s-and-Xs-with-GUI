@@ -32,7 +32,7 @@
         <Button x:Name="P7" Grid.Row="3" Grid.Column="1" Click="Button_Click"></Button>
         <Button x:Name="P8" Grid.Row="3" Grid.Column="2" Click="Button_Click"></Button>
         <Button x:Name="P9" Grid.Row="3" Grid.Column="3" Click="Button_Click"></Button>
-        <Button Grid.Row="0" Grid.Column="0" Click="Button_Click_10">Start</Button>
-        <Button Grid.Row="0" Grid.Column="4" Click="Button_Click_11">Save</Button>
+        <Button Grid.Row="0" Grid.Column="0" Click="Button_Click">Start</Button>
+        <Button Grid.Row="0" Grid.Column="4" Click="Button_Click">Save</Button>
     </Grid>
 </Window>
