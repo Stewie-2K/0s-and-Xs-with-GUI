@@ -21,75 +21,64 @@ namespace _0s_and_Xs_with_GUI
     public partial class MainWindow : Window
     {
         private Game g = new Game();
-        private object[] buttons = new object[9];
         public MainWindow()
         {
             InitializeComponent();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
-        {
+        {            
             if (sender == P1)
             {
-                P1.Content = "X";
                 Update(1);
             }
             if (sender == P2)
             {
-                P2.Content = "X";
                 Update(2);
             }
             if (sender == P3)
             {
-                P3.Content = "X";
                 Update(3);
             }
             if (sender == P4)
             {
-                P4.Content = "X";
                 Update(4);
             }
             if (sender == P5)
             {
-                P5.Content = "X";
                 Update(5);
             }
             if (sender == P6)
             {
-                P6.Content = "X";
                 Update(6);
             }
             if (sender == P7)
             {
-                P7.Content = "X";
                 Update(7);
             }
             if (sender == P8)
             {
-                P8.Content = "X";
                 Update(8);
             }
             if (sender == P9)
             {
-                P9.Content = "X";
                 Update(9);
             }
         }
         
         private void Update(int Pos)
         {
+            char[,] b = g.getBoard();
             g.Update(Pos);
-            for ()
-            {
-                for (int y = 0; y < 3; y++)
-                {
-                    for (int x = 0; x < 3; x++)
-                    {
-                        board[y, x];
-                    }
-                }
-            }            
-        }
-        
+            P1.Content = b[0, 0];
+            P2.Content = b[1, 0];
+            P3.Content = b[2, 0];
+            P4.Content = b[0, 1];
+            P5.Content = b[1, 1];
+            P6.Content = b[2, 1];
+            P7.Content = b[0, 2];
+            P8.Content = b[1, 2];
+            P9.Content = b[2, 2];                      
+        }     
     }
 }
