@@ -14,10 +14,8 @@ namespace _0s_and_Xs_with_GUI
         {
 
         }
-        public override int[] Move()
+        public override int[] Move(int boardPos)
         {
-            Console.WriteLine("Enter Board Position 1-9");
-            boardPos = Convert.ToInt32(Console.ReadLine());
             Coordinates[0] = (boardPos - 1) / 3;
             Coordinates[1] = (boardPos - 1) % 3;
             return Coordinates;

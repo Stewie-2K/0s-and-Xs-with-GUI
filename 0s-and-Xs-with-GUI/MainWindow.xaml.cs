@@ -20,8 +20,8 @@ namespace _0s_and_Xs_with_GUI
     /// </summary>
     public partial class MainWindow : Window
     {
-        private Player[] Players = new Player[2];
-        private Board b = new Board();
+        private Game g = new Game();
+        private object[] buttons = new object[9];
         public MainWindow()
         {
             InitializeComponent();
@@ -32,68 +32,64 @@ namespace _0s_and_Xs_with_GUI
             if (sender == P1)
             {
                 P1.Content = "X";
+                Update(1);
             }
             if (sender == P2)
             {
                 P2.Content = "X";
+                Update(2);
             }
             if (sender == P3)
             {
                 P3.Content = "X";
+                Update(3);
             }
             if (sender == P4)
             {
                 P4.Content = "X";
+                Update(4);
             }
             if (sender == P5)
             {
                 P5.Content = "X";
+                Update(5);
             }
             if (sender == P6)
             {
                 P6.Content = "X";
+                Update(6);
             }
             if (sender == P7)
             {
                 P7.Content = "X";
+                Update(7);
             }
             if (sender == P8)
             {
                 P8.Content = "X";
+                Update(8);
             }
             if (sender == P9)
             {
                 P9.Content = "X";
+                Update(9);
             }
         }
-        private void choosePlayers(int Choice)
+        
+        private void Update(int Pos)
         {
-            if (Choice == 0)
+            g.Update(Pos);
+            for ()
             {
-                Players[0] = new Human_Player();
-                Players[1] = new Human_Player();
-            }
-            if (Choice == 1)
-            {
-                Players[0] = new AI_Player(b, Choice);
-                Players[1] = new Human_Player();
-            }
-            if (Choice == 2)
-            {
-                Players[0] = new Human_Player();
-                Players[1] = new AI_Player(b, Choice);
-            }
+                for (int y = 0; y < 3; y++)
+                {
+                    for (int x = 0; x < 3; x++)
+                    {
+                        board[y, x];
+                    }
+                }
+            }            
         }
-
-        private void Update()
-        {
-            int who = 0;
-            while (b.checkwin() == 0)
-            {
-                b.addCounter((who % 2) + 1, Players[who % 2].Move());
-                //need to update UI
-                who++;
-            }
-        }    
+        
     }
 }

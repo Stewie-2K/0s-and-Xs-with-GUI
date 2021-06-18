@@ -18,7 +18,7 @@ namespace _0s_and_Xs_with_GUI
             this.board = b.GetBoard();
             Which = c;
         }
-        public override int[] Move()
+        public override int[] Move(int x)
         {
             int bestVal = -1000;
             int Current = 0;

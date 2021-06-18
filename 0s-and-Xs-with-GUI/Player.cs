@@ -13,7 +13,7 @@ namespace _0s_and_Xs_with_GUI
 
         }
 
-        public abstract int[] Move();
+        public abstract int[] Move(int boardPos);
 
     }
 }
