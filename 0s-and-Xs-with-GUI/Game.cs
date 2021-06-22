@@ -10,6 +10,7 @@ namespace _0s_and_Xs_with_GUI
     {
         private Player[] Players = new Player[2];
         private Board b = new Board();
+        private int who = 0;
 
         public void choosePlayers(int Choice)
         {
@@ -29,19 +30,30 @@ namespace _0s_and_Xs_with_GUI
                 Players[1] = new AI_Player(b, Choice);
             }
         }
+        public void reset()
+        {
+            b.clearBoard();
+            who = 0;
+        }
+
         public char[,] getBoard()
         {
             return b.GetBoard();
         }
 
-        public void Update(int boardPos)
+        public int Update(int boardPos)
         {
-            int who = 0;
+            bool Placed;
+            
             if(b.checkwin() == 0)
             {
-                b.addCounter((who % 2) + 1, Players[who % 2].Move(boardPos));
-                who++;
+                Placed = b.addCounter((who % 2) + 1, Players[who % 2].Move(boardPos));
+                if(Placed == true)
+                {
+                    who++;
+                }               
             }
+            return b.checkwin();
         }
     }
 

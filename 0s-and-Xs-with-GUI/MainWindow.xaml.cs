@@ -24,6 +24,7 @@ namespace _0s_and_Xs_with_GUI
         public MainWindow()
         {
             InitializeComponent();
+            g.choosePlayers(0);
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -69,16 +70,47 @@ namespace _0s_and_Xs_with_GUI
         private void Update(int Pos)
         {
             char[,] b = g.getBoard();
-            g.Update(Pos);
+            int winStatus = g.Update(Pos);
+
+            UpdateBoardUI(b);
+
+            if (winStatus == 1)
+            {
+                Status.Content = "Xs Win!";
+            }
+            if (winStatus == 2)
+            {
+                Status.Content = "Os Win!";
+            }
+            if (winStatus == 3)
+            {
+                Status.Content = "It's a Draw!";
+            }
+        }
+        private void UpdateBoardUI(char[,] b)
+        {
             P1.Content = b[0, 0];
-            P2.Content = b[1, 0];
-            P3.Content = b[2, 0];
-            P4.Content = b[0, 1];
+            P2.Content = b[0, 1];
+            P3.Content = b[0, 2];
+            P4.Content = b[1, 0];
             P5.Content = b[1, 1];
-            P6.Content = b[2, 1];
-            P7.Content = b[0, 2];
-            P8.Content = b[1, 2];
-            P9.Content = b[2, 2];                      
-        }     
+            P6.Content = b[1, 2];
+            P7.Content = b[2, 0];
+            P8.Content = b[2, 1];
+            P9.Content = b[2, 2];
+        }
+
+        private void Start(object sender, RoutedEventArgs e)
+        {
+            char[,] b = new char[3, 3];
+            g.reset();
+            UpdateBoardUI(b);
+            Status.Content = "";
+        }
+
+        private void Save(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
