@@ -100,7 +100,7 @@ namespace _0s_and_Xs_with_GUI
             P9.Content = b[2, 2];
         }
 
-        private void Start(object sender, RoutedEventArgs e)
+        private void Reset(object sender, RoutedEventArgs e)
         {
             char[,] b = new char[3, 3];
             g.reset();
