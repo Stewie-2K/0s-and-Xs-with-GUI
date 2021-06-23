@@ -6,13 +6,31 @@
         xmlns:local="clr-namespace:_0s_and_Xs_with_GUI"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    
-    
-    <Window.Background>
-        <ImageBrush ImageSource="Background.jpg" />
-    </Window.Background>
-    
+     
     <Grid>
+        <Grid.Background>
+
+            <DrawingBrush>
+
+                <DrawingBrush.Drawing>
+
+                    <DrawingGroup Opacity="1">
+
+                        <ImageDrawing  Rect="0,0,10,10" ImageSource="Background.jpg"></ImageDrawing>
+
+                        <DrawingGroup Opacity=".6">
+
+                            <ImageDrawing  Rect="2,2,6,6" ImageSource="Grid.png"></ImageDrawing>
+
+                        </DrawingGroup>
+
+                    </DrawingGroup>
+
+                </DrawingBrush.Drawing>
+
+            </DrawingBrush>
+
+        </Grid.Background>
         <Grid.ColumnDefinitions>
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
@@ -29,7 +47,7 @@
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
 
-        <Label x:Name="Status" Grid.Row="0" Grid.Column="2" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"></Label>
+        <Label x:Name="Status" Grid.Row="0" Grid.Column="2" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="LightGreen"></Label>
 
         <Button x:Name="P1" Grid.Row="1" Grid.Column="1" Click="Button_Click" Background="Transparent" Foreground="White" FontSize="30" BorderThickness="0"></Button>
         <Button x:Name="P2" Grid.Row="1" Grid.Column="2" Click="Button_Click" Background="Transparent" Foreground="White" FontSize="30" BorderThickness="0"></Button>
