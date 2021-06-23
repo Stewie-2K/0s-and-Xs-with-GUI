@@ -103,11 +103,11 @@ namespace _0s_and_Xs_with_GUI
                 {
                     if (board[0, x] == board[1, x] && board[1, x] == board[2, x])
                     {
-                        if (board[x, 0] == 'X')
+                        if (board[0, x] == 'X')
                         {
                             Status = 1;
                         }
-                        if (board[x, 0] == 'O')
+                        if (board[0, x] == 'O')
                         {
                             Status = 2;
                         }

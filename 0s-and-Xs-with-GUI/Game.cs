@@ -45,14 +45,11 @@ namespace _0s_and_Xs_with_GUI
         {
             bool Placed;
             
-            if(b.checkwin() == 0)
+            Placed = b.addCounter((who % 2) + 1, Players[who % 2].Move(boardPos));
+            if(Placed == true)
             {
-                Placed = b.addCounter((who % 2) + 1, Players[who % 2].Move(boardPos));
-                if(Placed == true)
-                {
-                    who++;
-                }               
-            }
+                 who++;
+            }               
             return b.checkwin();
         }
     }
