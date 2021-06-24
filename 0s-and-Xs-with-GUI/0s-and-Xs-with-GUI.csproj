@@ -109,5 +109,11 @@
   <ItemGroup>
     <Resource Include="Grid.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Rem_Anime.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="maxresdefault.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
