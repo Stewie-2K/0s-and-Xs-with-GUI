@@ -15,9 +15,7 @@ using System.Windows.Shapes;
 
 namespace _0s_and_Xs_with_GUI
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
+
     public partial class MainWindow : Window
     {
         private Game g = new Game();
@@ -76,15 +74,15 @@ namespace _0s_and_Xs_with_GUI
 
             if (winStatus == 1)
             {
-                Status.Content = "Xs Win!";
+                Status.Content = "Player one wins!";
             }
             if (winStatus == 2)
             {
-                Status.Content = "Os Win!";
+                Status.Content = "Player 2 wins!";
             }
             if (winStatus == 3)
             {
-                Status.Content = "It's a Draw!";
+                Status.Content = "Draw!";
             }
         }
         private void UpdateBoardUI(char[,] b)

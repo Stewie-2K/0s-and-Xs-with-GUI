@@ -29,15 +29,15 @@
 
         <Label x:Name="Status" Grid.Row="0" Grid.Column="2" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="LightGreen"></Label>
 
-        <Button x:Name="P1" Grid.Row="1" Grid.Column="1" Click="Button_Click" Background="Transparent" Foreground="White" FontSize="48" BorderThickness="6" BorderBrush="White" FontFamily="Poplar Std"/>
-        <Button x:Name="P2" Grid.Row="1" Grid.Column="2" Click="Button_Click" Background="Transparent" Foreground="White" FontSize="48" BorderThickness="6" HorizontalAlignment="Left" Width="159" BorderBrush="White" FontFamily="Poplar Std"/>
-        <Button x:Name="P3" Grid.Row="1" Grid.Column="3" Click="Button_Click" Background="Transparent" Foreground="White" FontSize="48" BorderThickness="6" BorderBrush="White" FontFamily="Poplar Std"/>
-        <Button x:Name="P4" Grid.Row="2" Grid.Column="1" Click="Button_Click" Background="Transparent" Foreground="White" FontSize="48" BorderThickness="6" BorderBrush="White" FontFamily="Poplar Std"/>
-        <Button x:Name="P5" Grid.Row="2" Grid.Column="2" Click="Button_Click" Background="Transparent" Foreground="White" FontSize="48" BorderThickness="6" BorderBrush="White" FontFamily="Poplar Std"/>
-        <Button x:Name="P6" Grid.Row="2" Grid.Column="3" Click="Button_Click" Background="Transparent" Foreground="White" FontSize="48" BorderThickness="6" BorderBrush="White" FontFamily="Poplar Std"/>
-        <Button x:Name="P7" Grid.Row="3" Grid.Column="1" Click="Button_Click" Background="Transparent" Foreground="White" FontSize="48" BorderThickness="6" BorderBrush="White" FontFamily="Poplar Std"/>
-        <Button x:Name="P8" Grid.Row="3" Grid.Column="2" Click="Button_Click" Background="Transparent" Foreground="White" FontSize="48" BorderThickness="6" BorderBrush="White" FontFamily="Poplar Std"/>
-        <Button x:Name="P9" Grid.Row="3" Grid.Column="3" Click="Button_Click" Background="Transparent" Foreground="White" FontSize="48" BorderThickness="6" BorderBrush="White" FontFamily="Poplar Std"/>
+        <Button x:Name="P1" Grid.Row="1" Grid.Column="1" Click="Button_Click" Background="Transparent" Foreground="Black" FontSize="48" BorderThickness="6" BorderBrush="White" FontFamily="Poplar Std"/>
+        <Button x:Name="P2" Grid.Row="1" Grid.Column="2" Click="Button_Click" Background="Transparent" Foreground="Black" FontSize="48" BorderThickness="6" BorderBrush="White" FontFamily="Poplar Std"/>
+        <Button x:Name="P3" Grid.Row="1" Grid.Column="3" Click="Button_Click" Background="Transparent" Foreground="Black" FontSize="48" BorderThickness="6" BorderBrush="White" FontFamily="Poplar Std"/>
+        <Button x:Name="P4" Grid.Row="2" Grid.Column="1" Click="Button_Click" Background="Transparent" Foreground="Black" FontSize="48" BorderThickness="6" BorderBrush="White" FontFamily="Poplar Std"/>
+        <Button x:Name="P5" Grid.Row="2" Grid.Column="2" Click="Button_Click" Background="Transparent" Foreground="Black" FontSize="48" BorderThickness="6" BorderBrush="White" FontFamily="Poplar Std"/>
+        <Button x:Name="P6" Grid.Row="2" Grid.Column="3" Click="Button_Click" Background="Transparent" Foreground="Black" FontSize="48" BorderThickness="6" BorderBrush="White" FontFamily="Poplar Std"/>
+        <Button x:Name="P7" Grid.Row="3" Grid.Column="1" Click="Button_Click" Background="Transparent" Foreground="Black" FontSize="48" BorderThickness="6" BorderBrush="White" FontFamily="Poplar Std"/>
+        <Button x:Name="P8" Grid.Row="3" Grid.Column="2" Click="Button_Click" Background="Transparent" Foreground="Black" FontSize="48" BorderThickness="6" BorderBrush="White" FontFamily="Poplar Std"/>
+        <Button x:Name="P9" Grid.Row="3" Grid.Column="3" Click="Button_Click" Background="Transparent" Foreground="Black" FontSize="48" BorderThickness="6" BorderBrush="White" FontFamily="Poplar Std"/>
         <Button x:Name="ResetBtn" Grid.Row="4" Grid.Column="1" Click="Reset" Background="Transparent" Foreground="White" FontSize="48" BorderThickness="0" Margin="0,0,0,-1" FontFamily="Poplar Std">Reset</Button>
         <Button x:Name="SaveBtn" Grid.Row="4" Grid.Column="2" Click="Save" Background="Transparent" Foreground="White" FontSize="48" BorderThickness="0" Grid.ColumnSpan="2" Margin="158,0,0,0" FontFamily="Poplar Std">Save</Button>
     </Grid>
